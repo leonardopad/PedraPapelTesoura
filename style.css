@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+#telaJogatina {
+    margin: 5%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: deeppink dashed;
+}
+#computador {
+    margin: 5%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: white dashed;
+    
+}
+.caixa-jogo {
+    background-color: white;
+}
+.placar-tabela > table > thead >th{
+    border: yellow solid;
+    margin: 5%;
+}
+.placar-div {
+
+}
+#tabela td, #tabela th {
+    border: 1px dashed #dddd;
+    padding: 8px;
+    text-align: center;
+}
+img {
+    width: 150px;
+    height: 150px;
+}
