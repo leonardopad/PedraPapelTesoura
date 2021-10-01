@@ -15,12 +15,13 @@
         <div id="caixa-jogo">
         <p>Começe o jogo!.</p>
             <h3>escolha uma opção!</h3>
-            <select name="" id="escolhaJogador">
-                <option id="" value="pedra">Preda</option>
-                <option id="" value="Papel">Papel</option>
-                <option id="" value="Tesoura">Tesoura</option>
+            <select name="" id="escolhaJogador" onchange="escolhaUsuario()">
+                <option value="selecione">Selecione uma opção:</option>
+                <option  value="pedra">Preda</option>
+                <option  value="papel">Papel</option>
+                <option  value="tesoura">Tesoura</option>
             </select>
-            <img id="imagemEscolha" src="pedra.png" alt="">
+            <img id="imagemEscolha" src="" >
           </div>
           <br>
         </div>
@@ -28,7 +29,10 @@
       <div id="computador">
         <h3>Computador</h3>
         <p>Escolha da maquina</p>
+        <img  id="imagemMaquina" src="">
     </div>
+    <button onclick="jogar()">Jogar</button>
+    <button onclick="reinicio()" >Reiniciar</button>
       <div class="caixa-jogo">
           <h3>Placar</h3>
           <div class="placar">
@@ -40,13 +44,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                    <TH>0</TH>
+                    <TH id="placar-jogador"></TH>
                     <th>x</th>
-                    <th>0</th>
+                    <th id="placar-computador"></th>
                 </tr>
                 <tr>
-                    <td colspan="2">Partidas Jogadas</td>
-                    <td>0</td>
+                    <td  colspan="2">Partidas Jogadas</td>
+                    <td id="placar-jogados"></td>
                 </tr>
                 </tbody>
             </table>
@@ -56,7 +60,6 @@
       </div>
       <div></div>
     
-      <p id="action-message">Faça sua escolha!</p>
       <script src="app.js" charset="utf-8"></script>
     
 
